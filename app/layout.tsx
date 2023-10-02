@@ -2,7 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
-import { Nav } from "@/components/Nav";
+import Navbar from "@/components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,7 +24,7 @@ export default function RootLayout({
       <body>
         <ThemeProvider attribute="class" defaultTheme="dark">
           <main className="flex flex-col bg-slate-100 dark:bg-zinc-900">
-            <Nav />
+            <Navbar title="X-Profile" />
             {children}
           </main>
         </ThemeProvider>

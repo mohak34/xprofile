@@ -1,12 +1,13 @@
-import Link from "next/link";
-import AddProfileButton from "@/components/AddProfileButton";
+import Socials from "@/components/Socials";
+import HeroSection from "@/components/HeroSection";
+import profile1 from "@/public/profile1.svg";
+import profile2 from "@/public/profile2.svg";
+
 export default function Home() {
   return (
-    <div className="relative flex flex-col items-center justify-center min-h-screen py-2">
-      <AddProfileButton className="top-20" />
-      <p className="scroll-m-20 hover:text-green-500 text-3xl font-semibold tracking-tight">
-        <Link href="https://x.hellofaizan.me">Under construction 🚧</Link>
-      </p>
+    <div className="flex flex-col items-center justify-center">
+      <HeroSection imageUrl="profile1.svg" imageAlt="hero" />
+      <Socials />
     </div>
   );
 }
